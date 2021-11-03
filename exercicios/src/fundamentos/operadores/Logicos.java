@@ -19,16 +19,20 @@ public class Logicos {
 //		System.out.println(false && true);
 //		System.out.println(false && false);
 		
-		System.out.println("Tabela verdade OU");
+		System.out.println("\nTabela verdade OU");
 //		System.out.println(true || true);
 //		System.out.println(true || false);
 		System.out.println(false || true);
 		System.out.println(false || false);
 		
-		System.out.println("Tabela verdade OU Exclusivo (XOR)");
+		System.out.println("\nTabela verdade OU Exclusivo (XOR)");
 		System.out.println(true ^ true);
 		System.out.println(true ^ false);
 		System.out.println(false ^ true);
 		System.out.println(false ^ false);
+		
+		System.out.println("\nTabela verdade NOT");
+		System.out.println(!true);
+		System.out.println(!false);		
 	}
 }
