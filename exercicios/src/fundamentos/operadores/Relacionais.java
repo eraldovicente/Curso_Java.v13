@@ -21,6 +21,6 @@ public class Relacionais {
 		
 		boolean temDesconto = bomComportamento && passouPorMedia;
 		
-		System.out.println("Tem desconto? " + temDesconto );
+		System.out.println("Tem desconto " + temDesconto);
 	}
 }
