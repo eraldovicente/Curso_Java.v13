@@ -30,7 +30,7 @@ public class ConjuntoBaguncado {
 		System.out.println(conjunto.contains(1));
 		System.out.println(conjunto.contains(true));
 		
-		Set<E> nums = new HashSet();
+		Set nums = new HashSet();
 		nums.add(1);
 		nums.add(2);
 		nums.add(3);
