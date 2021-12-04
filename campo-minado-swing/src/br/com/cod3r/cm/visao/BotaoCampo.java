@@ -2,6 +2,8 @@
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.SwingUtilities;
+
 import java.awt.Color;
 import java.awt.event.*;
 import br.com.cod3r.cm.modelo.Campo;
@@ -44,10 +46,16 @@ public class BotaoCampo extends JButton
 		default: 
 			aplicarEstiloPadrao();
 		}
+		
+		SwingUtilities.invokeLater(() -> {
+			repaint();
+			validate();
+		});
 	}
 
 	private void aplicarEstiloPadrao() {
 		setBackground(BG_PADRAO);
+		setBorder(BorderFactory.createBevelBorder(0));
 		setText("");
 	}
 
