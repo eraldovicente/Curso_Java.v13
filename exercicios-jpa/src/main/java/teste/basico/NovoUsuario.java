@@ -15,11 +15,13 @@ public class NovoUsuario {
 		EntityManager em = emf.createEntityManager();
 		
 		Usuario novoUsuario = new Usuario("Biana", "biana@gmail.com");
-		novoUsuario.setId(1L);
+//		novoUsuario.setId(1L);
 		
 		em.getTransaction().begin();
 		em.persist(novoUsuario);
 		em.getTransaction().commit();
+		
+		System.out.println("O Id gerado foi: " + novoUsuario.getId());
 		
 		em.close();
 		emf.close();
