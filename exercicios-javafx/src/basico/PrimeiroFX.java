@@ -16,6 +16,10 @@ public class PrimeiroFX extends Application {
 		Button botaoB = new Button("B");
 		Button botaoC = new Button("C");
 		
+		botaoA.setOnAction(e -> System.out.println("A"));
+		botaoA.setOnAction(e -> System.out.println("B"));
+		botaoA.setOnAction(e -> System.exit(0));
+		
 		VBox box = new VBox();
 		box.setAlignment(Pos.CENTER);
 		box.setSpacing(10);
