@@ -3,4 +3,5 @@ module exerciciosfx {
 //	exports basico to javafx.graphics;
 	
 	opens basico;
+	opens layout;
 }
