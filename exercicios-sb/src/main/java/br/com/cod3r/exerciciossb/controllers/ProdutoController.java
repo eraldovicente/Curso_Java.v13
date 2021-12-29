@@ -39,7 +39,8 @@ public class ProdutoController {
 	@GetMapping(path = "/nome/{parteNome}")
 	public Iterable<Produto> obterProdutosPorNome(
 			@PathVariable String parteNome) {
-		return produtoRepository.findByNomeContaining(parteNome);
+//		return produtoRepository.findByNomeContaining(parteNome);
+		return produtoRepository.searchByNameLike(parteNome);
 	}
 	
 	@GetMapping(path = "/pagina/{numeroPagina}/{qtdePagina}")
