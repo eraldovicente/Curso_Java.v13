@@ -15,11 +15,12 @@ import br.com.cod3r.exerciciossb.model.repositories.ProdutoRepository;
 public class ProdutoController {
 	
 	@Autowired
-	private ProdutoRepository produtoRepository;
+	private ProdutoRepository produtoRepository; 
 	
 	@PostMapping
 	public @ResponseBody Produto novoProduto(@RequestParam String nome) {
 		Produto produto = new Produto(nome);
+		System.out.println(produto.repository);
 		produtoRepository.save(produto);
 		return produto;
 	}
